@@ -71,18 +71,26 @@ JAVA_OPT="${JAVA_OPT} -server -Xms2g -Xmx2g -Xmn1g -XX:MetaspaceSize=128m -XX:Ma
 start nameserver
 ```
 [root@rocketmq-nameserver1 ~]# cd /usr/local/rocketmq/bin/
+# apply os tuning script
+[root@rocketmq-nameserver1 ~]# sh os.sh
 [root@rocketmq-nameserver1 ~]# nohup sh mqnamesrv &
 [root@rocketmq-nameserver1 ~]# jps
 
 [root@rocketmq-nameserver2 ~]# cd /usr/local/rocketmq/bin/
+# apply os tuning script
+[root@rocketmq-nameserver2 ~]# sh os.sh
 [root@rocketmq-nameserver2 ~]# nohup sh mqnamesrv &
 [root@rocketmq-nameserver2 ~]# jps
 
 [root@rocketmq-nameserver3 ~]# cd /usr/local/rocketmq/bin/
+# apply os tuning script
+[root@rocketmq-nameserver3 ~]# sh os.sh
 [root@rocketmq-nameserver3 ~]# nohup sh mqnamesrv &
 [root@rocketmq-nameserver3 ~]# jps
 
 [root@rocketmq-nameserver4 ~]# cd /usr/local/rocketmq/bin/
+# apply os tuning script
+[root@rocketmq-nameserver4 ~]# sh os.sh
 [root@rocketmq-nameserver4 ~]# nohup sh mqnamesrv &
 [root@rocketmq-nameserver4 ~]# jps
 ```
